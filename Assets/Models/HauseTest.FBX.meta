@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5539ffaaac7cd3c4fa4a080ad3d7b1e1
-timeCreated: 1518128984
+guid: 246c36c84deae1e48a1247ff168985b2
+timeCreated: 1518199379
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -99,121 +99,118 @@ ModelImporter:
     100182: Box099
     100184: Box102
     100186: Box103
-    100188: Box104
-    100190: Box105
-    100192: Box108
-    100194: Box109
-    100196: Box110
-    100198: Box111
-    100200: Box112
-    100202: Box114
-    100204: Box115
-    100206: Box116
-    100208: Box117
-    100210: Box118
-    100212: Box119
-    100214: Box122
-    100216: Box123
-    100218: Box124
-    100220: Box125
-    100222: Box126
-    100224: Box127
-    100226: Box128
-    100228: Box129
-    100230: Box130
-    100232: Box131
-    100234: Box132
-    100236: Box134
-    100238: Box135
-    100240: Box136
-    100242: Box137
-    100244: Box138
-    100246: Box139
-    100248: Box140
-    100250: Box141
-    100252: Box142
-    100254: Box144
-    100256: Box145
-    100258: Box146
-    100260: Box147
-    100262: Box148
-    100264: Box151
-    100266: Box152
-    100268: Box153
-    100270: Box155
-    100272: Box160
-    100274: Box163
-    100276: Box164
-    100278: Box166
-    100280: Box167
-    100282: Box169
-    100284: Box170
-    100286: Box172
-    100288: Box174
-    100290: Box177
-    100292: Box179
-    100294: Box181
-    100296: Box182
-    100298: Box186
-    100300: Box188
-    100302: Box189
-    100304: Box190
-    100306: Box191
-    100308: Box192
-    100310: Box193
-    100312: Box194
-    100314: Box195
-    100316: Box196
-    100318: Box197
-    100320: Box199
-    100322: Box200
-    100324: Box201
-    100326: Box202
-    100328: Box203
-    100330: Box211
-    100332: Box212
-    100334: Box214
-    100336: Box217
-    100338: Box218
-    100340: Box219
-    100342: Box221
-    100344: Box223
-    100346: Box224
-    100348: Box225
-    100350: Box226
-    100352: Box227
-    100354: bOXES
-    100356: clonebalkenbeloon
-    100358: clonebalkenbeloon22222
-    100360: clonebalkenbeloon22223
-    100362: clonebalkenbeloon22224
-    100364: clonebalkendachbeloon
-    100366: Clonedachbeloon
-    100368: Cylinder009
-    100370: Cylinder010
-    100372: Cylinder011
-    100374: Cylinder012
-    100376: Cylinder013
-    100378: //RootNode
-    100380: Line013
-    100382: Loft001
-    100384: Loft005
-    100386: Loft008
-    100388: Loft009
-    100390: Stair
-    100392: Wand bad hinten
-    100394: Wand mit fenster (flur)
-    100396: Wand mit fenster (flur)001
-    100398: Wand mit fenster (flur)002
-    100400: Wand mit fenster (flur)003
-    100402: Wand mit fenster (flur)006
-    100404: Wand mit fenster (flur)007
-    100406: Wohnzimmer wand006
-    100408: Wohnzimmer wand010
-    100410: Wohnzimmer wand011
-    100412: Wohnzimmer wand012
-    100414: Wohnzimmer wand014
-    100416: Wohnzimmer wand015
+    100188: Box105
+    100190: Box108
+    100192: Box109
+    100194: Box110
+    100196: Box111
+    100198: Box112
+    100200: Box114
+    100202: Box115
+    100204: Box116
+    100206: Box117
+    100208: Box118
+    100210: Box119
+    100212: Box122
+    100214: Box123
+    100216: Box124
+    100218: Box125
+    100220: Box126
+    100222: Box127
+    100224: Box128
+    100226: Box129
+    100228: Box130
+    100230: Box131
+    100232: Box132
+    100234: Box134
+    100236: Box135
+    100238: Box136
+    100240: Box137
+    100242: Box138
+    100244: Box139
+    100246: Box140
+    100248: Box141
+    100250: Box142
+    100252: Box144
+    100254: Box145
+    100256: Box146
+    100258: Box147
+    100260: Box151
+    100262: Box152
+    100264: Box153
+    100266: Box155
+    100268: Box160
+    100270: Box163
+    100272: Box164
+    100274: Box166
+    100276: Box167
+    100278: Box169
+    100280: Box170
+    100282: Box172
+    100284: Box174
+    100286: Box177
+    100288: Box179
+    100290: Box181
+    100292: Box182
+    100294: Box186
+    100296: Box188
+    100298: Box189
+    100300: Box190
+    100302: Box191
+    100304: Box192
+    100306: Box193
+    100308: Box194
+    100310: Box195
+    100312: Box196
+    100314: Box197
+    100316: Box199
+    100318: Box200
+    100320: Box201
+    100322: Box202
+    100324: Box203
+    100326: Box211
+    100328: Box212
+    100330: Box214
+    100332: Box217
+    100334: Box218
+    100336: Box219
+    100338: Box221
+    100340: Box223
+    100342: Box224
+    100344: Box225
+    100346: Box226
+    100348: Box227
+    100350: bOXES
+    100352: clonebalkenbeloon
+    100354: clonebalkenbeloon22222
+    100356: clonebalkenbeloon22223
+    100358: clonebalkenbeloon22224
+    100360: clonebalkendachbeloon
+    100362: Clonedachbeloon
+    100364: Cylinder009
+    100366: Cylinder010
+    100368: Cylinder011
+    100370: Cylinder012
+    100372: Cylinder013
+    100374: //RootNode
+    100376: Line013
+    100378: Loft001
+    100380: Loft005
+    100382: Loft008
+    100384: Loft009
+    100386: Stair
+    100388: Wand bad hinten
+    100390: Wand mit fenster (flur)
+    100392: Wand mit fenster (flur)002
+    100394: Wand mit fenster (flur)003
+    100396: Wand mit fenster (flur)006
+    100398: Wand mit fenster (flur)007
+    100400: Wohnzimmer wand006
+    100402: Wohnzimmer wand010
+    100404: Wohnzimmer wand011
+    100406: Wohnzimmer wand012
+    100408: Wohnzimmer wand014
+    100410: Wohnzimmer wand015
     400000: AI29_01_stairs_002_00
     400002: AI29_01_stairs_002_02
     400004: AI29_01_stairs_002_028
@@ -308,129 +305,127 @@ ModelImporter:
     400182: Box099
     400184: Box102
     400186: Box103
-    400188: Box104
-    400190: Box105
-    400192: Box108
-    400194: Box109
-    400196: Box110
-    400198: Box111
-    400200: Box112
-    400202: Box114
-    400204: Box115
-    400206: Box116
-    400208: Box117
-    400210: Box118
-    400212: Box119
-    400214: Box122
-    400216: Box123
-    400218: Box124
-    400220: Box125
-    400222: Box126
-    400224: Box127
-    400226: Box128
-    400228: Box129
-    400230: Box130
-    400232: Box131
-    400234: Box132
-    400236: Box134
-    400238: Box135
-    400240: Box136
-    400242: Box137
-    400244: Box138
-    400246: Box139
-    400248: Box140
-    400250: Box141
-    400252: Box142
-    400254: Box144
-    400256: Box145
-    400258: Box146
-    400260: Box147
-    400262: Box148
-    400264: Box151
-    400266: Box152
-    400268: Box153
-    400270: Box155
-    400272: Box160
-    400274: Box163
-    400276: Box164
-    400278: Box166
-    400280: Box167
-    400282: Box169
-    400284: Box170
-    400286: Box172
-    400288: Box174
-    400290: Box177
-    400292: Box179
-    400294: Box181
-    400296: Box182
-    400298: Box186
-    400300: Box188
-    400302: Box189
-    400304: Box190
-    400306: Box191
-    400308: Box192
-    400310: Box193
-    400312: Box194
-    400314: Box195
-    400316: Box196
-    400318: Box197
-    400320: Box199
-    400322: Box200
-    400324: Box201
-    400326: Box202
-    400328: Box203
-    400330: Box211
-    400332: Box212
-    400334: Box214
-    400336: Box217
-    400338: Box218
-    400340: Box219
-    400342: Box221
-    400344: Box223
-    400346: Box224
-    400348: Box225
-    400350: Box226
-    400352: Box227
-    400354: bOXES
-    400356: clonebalkenbeloon
-    400358: clonebalkenbeloon22222
-    400360: clonebalkenbeloon22223
-    400362: clonebalkenbeloon22224
-    400364: clonebalkendachbeloon
-    400366: Clonedachbeloon
-    400368: Cylinder009
-    400370: Cylinder010
-    400372: Cylinder011
-    400374: Cylinder012
-    400376: Cylinder013
-    400378: //RootNode
-    400380: Line013
-    400382: Loft001
-    400384: Loft005
-    400386: Loft008
-    400388: Loft009
-    400390: Stair
-    400392: Wand bad hinten
-    400394: Wand mit fenster (flur)
-    400396: Wand mit fenster (flur)001
-    400398: Wand mit fenster (flur)002
-    400400: Wand mit fenster (flur)003
-    400402: Wand mit fenster (flur)006
-    400404: Wand mit fenster (flur)007
-    400406: Wohnzimmer wand006
-    400408: Wohnzimmer wand010
-    400410: Wohnzimmer wand011
-    400412: Wohnzimmer wand012
-    400414: Wohnzimmer wand014
-    400416: Wohnzimmer wand015
+    400188: Box105
+    400190: Box108
+    400192: Box109
+    400194: Box110
+    400196: Box111
+    400198: Box112
+    400200: Box114
+    400202: Box115
+    400204: Box116
+    400206: Box117
+    400208: Box118
+    400210: Box119
+    400212: Box122
+    400214: Box123
+    400216: Box124
+    400218: Box125
+    400220: Box126
+    400222: Box127
+    400224: Box128
+    400226: Box129
+    400228: Box130
+    400230: Box131
+    400232: Box132
+    400234: Box134
+    400236: Box135
+    400238: Box136
+    400240: Box137
+    400242: Box138
+    400244: Box139
+    400246: Box140
+    400248: Box141
+    400250: Box142
+    400252: Box144
+    400254: Box145
+    400256: Box146
+    400258: Box147
+    400260: Box151
+    400262: Box152
+    400264: Box153
+    400266: Box155
+    400268: Box160
+    400270: Box163
+    400272: Box164
+    400274: Box166
+    400276: Box167
+    400278: Box169
+    400280: Box170
+    400282: Box172
+    400284: Box174
+    400286: Box177
+    400288: Box179
+    400290: Box181
+    400292: Box182
+    400294: Box186
+    400296: Box188
+    400298: Box189
+    400300: Box190
+    400302: Box191
+    400304: Box192
+    400306: Box193
+    400308: Box194
+    400310: Box195
+    400312: Box196
+    400314: Box197
+    400316: Box199
+    400318: Box200
+    400320: Box201
+    400322: Box202
+    400324: Box203
+    400326: Box211
+    400328: Box212
+    400330: Box214
+    400332: Box217
+    400334: Box218
+    400336: Box219
+    400338: Box221
+    400340: Box223
+    400342: Box224
+    400344: Box225
+    400346: Box226
+    400348: Box227
+    400350: bOXES
+    400352: clonebalkenbeloon
+    400354: clonebalkenbeloon22222
+    400356: clonebalkenbeloon22223
+    400358: clonebalkenbeloon22224
+    400360: clonebalkendachbeloon
+    400362: Clonedachbeloon
+    400364: Cylinder009
+    400366: Cylinder010
+    400368: Cylinder011
+    400370: Cylinder012
+    400372: Cylinder013
+    400374: //RootNode
+    400376: Line013
+    400378: Loft001
+    400380: Loft005
+    400382: Loft008
+    400384: Loft009
+    400386: Stair
+    400388: Wand bad hinten
+    400390: Wand mit fenster (flur)
+    400392: Wand mit fenster (flur)002
+    400394: Wand mit fenster (flur)003
+    400396: Wand mit fenster (flur)006
+    400398: Wand mit fenster (flur)007
+    400400: Wohnzimmer wand006
+    400402: Wohnzimmer wand010
+    400404: Wohnzimmer wand011
+    400406: Wohnzimmer wand012
+    400408: Wohnzimmer wand014
+    400410: Wohnzimmer wand015
     2100000: 19 - Default
     2100002: 02 - Default
-    2100004: 16 - Default
-    2100006: Glas
-    2100008: 24 - Default
-    2100010: No Name
-    2100012: Cliff
-    2100014: tapette
+    2100004: Wallstone
+    2100006: 16 - Default
+    2100008: Glas
+    2100010: 24 - Default
+    2100012: No Name
+    2100014: Cliff
+    2100016: tapette
     2300000: AI29_01_stairs_002_00
     2300002: AI29_01_stairs_002_02
     2300004: AI29_01_stairs_002_028
@@ -524,118 +519,115 @@ ModelImporter:
     2300180: Box099
     2300182: Box102
     2300184: Box103
-    2300186: Box104
-    2300188: Box105
-    2300190: Box108
-    2300192: Box109
-    2300194: Box110
-    2300196: Box111
-    2300198: Box112
-    2300200: Box114
-    2300202: Box115
-    2300204: Box116
-    2300206: Box117
-    2300208: Box118
-    2300210: Box119
-    2300212: Box122
-    2300214: Box123
-    2300216: Box124
-    2300218: Box125
-    2300220: Box126
-    2300222: Box127
-    2300224: Box128
-    2300226: Box129
-    2300228: Box130
-    2300230: Box131
-    2300232: Box132
-    2300234: Box134
-    2300236: Box135
-    2300238: Box136
-    2300240: Box137
-    2300242: Box138
-    2300244: Box139
-    2300246: Box140
-    2300248: Box141
-    2300250: Box142
-    2300252: Box144
-    2300254: Box145
-    2300256: Box146
-    2300258: Box147
-    2300260: Box148
-    2300262: Box151
-    2300264: Box152
-    2300266: Box153
-    2300268: Box155
-    2300270: Box160
-    2300272: Box163
-    2300274: Box164
-    2300276: Box166
-    2300278: Box167
-    2300280: Box169
-    2300282: Box170
-    2300284: Box172
-    2300286: Box174
-    2300288: Box177
-    2300290: Box179
-    2300292: Box181
-    2300294: Box182
-    2300296: Box186
-    2300298: Box188
-    2300300: Box189
-    2300302: Box190
-    2300304: Box191
-    2300306: Box192
-    2300308: Box193
-    2300310: Box194
-    2300312: Box195
-    2300314: Box196
-    2300316: Box197
-    2300318: Box199
-    2300320: Box200
-    2300322: Box201
-    2300324: Box202
-    2300326: Box203
-    2300328: Box211
-    2300330: Box212
-    2300332: Box214
-    2300334: Box217
-    2300336: Box218
-    2300338: Box219
-    2300340: Box221
-    2300342: Box223
-    2300344: Box224
-    2300346: Box225
-    2300348: Box226
-    2300350: Box227
-    2300352: clonebalkenbeloon
-    2300354: clonebalkenbeloon22222
-    2300356: clonebalkenbeloon22223
-    2300358: clonebalkenbeloon22224
-    2300360: clonebalkendachbeloon
-    2300362: Clonedachbeloon
-    2300364: Cylinder009
-    2300366: Cylinder010
-    2300368: Cylinder011
-    2300370: Cylinder012
-    2300372: Cylinder013
-    2300374: Line013
-    2300376: Loft001
-    2300378: Loft005
-    2300380: Loft008
-    2300382: Loft009
-    2300384: Wand bad hinten
-    2300386: Wand mit fenster (flur)
-    2300388: Wand mit fenster (flur)001
-    2300390: Wand mit fenster (flur)002
-    2300392: Wand mit fenster (flur)003
-    2300394: Wand mit fenster (flur)006
-    2300396: Wand mit fenster (flur)007
-    2300398: Wohnzimmer wand006
-    2300400: Wohnzimmer wand010
-    2300402: Wohnzimmer wand011
-    2300404: Wohnzimmer wand012
-    2300406: Wohnzimmer wand014
-    2300408: Wohnzimmer wand015
+    2300186: Box105
+    2300188: Box108
+    2300190: Box109
+    2300192: Box110
+    2300194: Box111
+    2300196: Box112
+    2300198: Box114
+    2300200: Box115
+    2300202: Box116
+    2300204: Box117
+    2300206: Box118
+    2300208: Box119
+    2300210: Box122
+    2300212: Box123
+    2300214: Box124
+    2300216: Box125
+    2300218: Box126
+    2300220: Box127
+    2300222: Box128
+    2300224: Box129
+    2300226: Box130
+    2300228: Box131
+    2300230: Box132
+    2300232: Box134
+    2300234: Box135
+    2300236: Box136
+    2300238: Box137
+    2300240: Box138
+    2300242: Box139
+    2300244: Box140
+    2300246: Box141
+    2300248: Box142
+    2300250: Box144
+    2300252: Box145
+    2300254: Box146
+    2300256: Box147
+    2300258: Box151
+    2300260: Box152
+    2300262: Box153
+    2300264: Box155
+    2300266: Box160
+    2300268: Box163
+    2300270: Box164
+    2300272: Box166
+    2300274: Box167
+    2300276: Box169
+    2300278: Box170
+    2300280: Box172
+    2300282: Box174
+    2300284: Box177
+    2300286: Box179
+    2300288: Box181
+    2300290: Box182
+    2300292: Box186
+    2300294: Box188
+    2300296: Box189
+    2300298: Box190
+    2300300: Box191
+    2300302: Box192
+    2300304: Box193
+    2300306: Box194
+    2300308: Box195
+    2300310: Box196
+    2300312: Box197
+    2300314: Box199
+    2300316: Box200
+    2300318: Box201
+    2300320: Box202
+    2300322: Box203
+    2300324: Box211
+    2300326: Box212
+    2300328: Box214
+    2300330: Box217
+    2300332: Box218
+    2300334: Box219
+    2300336: Box221
+    2300338: Box223
+    2300340: Box224
+    2300342: Box225
+    2300344: Box226
+    2300346: Box227
+    2300348: clonebalkenbeloon
+    2300350: clonebalkenbeloon22222
+    2300352: clonebalkenbeloon22223
+    2300354: clonebalkenbeloon22224
+    2300356: clonebalkendachbeloon
+    2300358: Clonedachbeloon
+    2300360: Cylinder009
+    2300362: Cylinder010
+    2300364: Cylinder011
+    2300366: Cylinder012
+    2300368: Cylinder013
+    2300370: Line013
+    2300372: Loft001
+    2300374: Loft005
+    2300376: Loft008
+    2300378: Loft009
+    2300380: Wand bad hinten
+    2300382: Wand mit fenster (flur)
+    2300384: Wand mit fenster (flur)002
+    2300386: Wand mit fenster (flur)003
+    2300388: Wand mit fenster (flur)006
+    2300390: Wand mit fenster (flur)007
+    2300392: Wohnzimmer wand006
+    2300394: Wohnzimmer wand010
+    2300396: Wohnzimmer wand011
+    2300398: Wohnzimmer wand012
+    2300400: Wohnzimmer wand014
+    2300402: Wohnzimmer wand015
     3300000: AI29_01_stairs_002_00
     3300002: AI29_01_stairs_002_02
     3300004: AI29_01_stairs_002_028
@@ -729,118 +721,115 @@ ModelImporter:
     3300180: Box099
     3300182: Box102
     3300184: Box103
-    3300186: Box104
-    3300188: Box105
-    3300190: Box108
-    3300192: Box109
-    3300194: Box110
-    3300196: Box111
-    3300198: Box112
-    3300200: Box114
-    3300202: Box115
-    3300204: Box116
-    3300206: Box117
-    3300208: Box118
-    3300210: Box119
-    3300212: Box122
-    3300214: Box123
-    3300216: Box124
-    3300218: Box125
-    3300220: Box126
-    3300222: Box127
-    3300224: Box128
-    3300226: Box129
-    3300228: Box130
-    3300230: Box131
-    3300232: Box132
-    3300234: Box134
-    3300236: Box135
-    3300238: Box136
-    3300240: Box137
-    3300242: Box138
-    3300244: Box139
-    3300246: Box140
-    3300248: Box141
-    3300250: Box142
-    3300252: Box144
-    3300254: Box145
-    3300256: Box146
-    3300258: Box147
-    3300260: Box148
-    3300262: Box151
-    3300264: Box152
-    3300266: Box153
-    3300268: Box155
-    3300270: Box160
-    3300272: Box163
-    3300274: Box164
-    3300276: Box166
-    3300278: Box167
-    3300280: Box169
-    3300282: Box170
-    3300284: Box172
-    3300286: Box174
-    3300288: Box177
-    3300290: Box179
-    3300292: Box181
-    3300294: Box182
-    3300296: Box186
-    3300298: Box188
-    3300300: Box189
-    3300302: Box190
-    3300304: Box191
-    3300306: Box192
-    3300308: Box193
-    3300310: Box194
-    3300312: Box195
-    3300314: Box196
-    3300316: Box197
-    3300318: Box199
-    3300320: Box200
-    3300322: Box201
-    3300324: Box202
-    3300326: Box203
-    3300328: Box211
-    3300330: Box212
-    3300332: Box214
-    3300334: Box217
-    3300336: Box218
-    3300338: Box219
-    3300340: Box221
-    3300342: Box223
-    3300344: Box224
-    3300346: Box225
-    3300348: Box226
-    3300350: Box227
-    3300352: clonebalkenbeloon
-    3300354: clonebalkenbeloon22222
-    3300356: clonebalkenbeloon22223
-    3300358: clonebalkenbeloon22224
-    3300360: clonebalkendachbeloon
-    3300362: Clonedachbeloon
-    3300364: Cylinder009
-    3300366: Cylinder010
-    3300368: Cylinder011
-    3300370: Cylinder012
-    3300372: Cylinder013
-    3300374: Line013
-    3300376: Loft001
-    3300378: Loft005
-    3300380: Loft008
-    3300382: Loft009
-    3300384: Wand bad hinten
-    3300386: Wand mit fenster (flur)
-    3300388: Wand mit fenster (flur)001
-    3300390: Wand mit fenster (flur)002
-    3300392: Wand mit fenster (flur)003
-    3300394: Wand mit fenster (flur)006
-    3300396: Wand mit fenster (flur)007
-    3300398: Wohnzimmer wand006
-    3300400: Wohnzimmer wand010
-    3300402: Wohnzimmer wand011
-    3300404: Wohnzimmer wand012
-    3300406: Wohnzimmer wand014
-    3300408: Wohnzimmer wand015
+    3300186: Box105
+    3300188: Box108
+    3300190: Box109
+    3300192: Box110
+    3300194: Box111
+    3300196: Box112
+    3300198: Box114
+    3300200: Box115
+    3300202: Box116
+    3300204: Box117
+    3300206: Box118
+    3300208: Box119
+    3300210: Box122
+    3300212: Box123
+    3300214: Box124
+    3300216: Box125
+    3300218: Box126
+    3300220: Box127
+    3300222: Box128
+    3300224: Box129
+    3300226: Box130
+    3300228: Box131
+    3300230: Box132
+    3300232: Box134
+    3300234: Box135
+    3300236: Box136
+    3300238: Box137
+    3300240: Box138
+    3300242: Box139
+    3300244: Box140
+    3300246: Box141
+    3300248: Box142
+    3300250: Box144
+    3300252: Box145
+    3300254: Box146
+    3300256: Box147
+    3300258: Box151
+    3300260: Box152
+    3300262: Box153
+    3300264: Box155
+    3300266: Box160
+    3300268: Box163
+    3300270: Box164
+    3300272: Box166
+    3300274: Box167
+    3300276: Box169
+    3300278: Box170
+    3300280: Box172
+    3300282: Box174
+    3300284: Box177
+    3300286: Box179
+    3300288: Box181
+    3300290: Box182
+    3300292: Box186
+    3300294: Box188
+    3300296: Box189
+    3300298: Box190
+    3300300: Box191
+    3300302: Box192
+    3300304: Box193
+    3300306: Box194
+    3300308: Box195
+    3300310: Box196
+    3300312: Box197
+    3300314: Box199
+    3300316: Box200
+    3300318: Box201
+    3300320: Box202
+    3300322: Box203
+    3300324: Box211
+    3300326: Box212
+    3300328: Box214
+    3300330: Box217
+    3300332: Box218
+    3300334: Box219
+    3300336: Box221
+    3300338: Box223
+    3300340: Box224
+    3300342: Box225
+    3300344: Box226
+    3300346: Box227
+    3300348: clonebalkenbeloon
+    3300350: clonebalkenbeloon22222
+    3300352: clonebalkenbeloon22223
+    3300354: clonebalkenbeloon22224
+    3300356: clonebalkendachbeloon
+    3300358: Clonedachbeloon
+    3300360: Cylinder009
+    3300362: Cylinder010
+    3300364: Cylinder011
+    3300366: Cylinder012
+    3300368: Cylinder013
+    3300370: Line013
+    3300372: Loft001
+    3300374: Loft005
+    3300376: Loft008
+    3300378: Loft009
+    3300380: Wand bad hinten
+    3300382: Wand mit fenster (flur)
+    3300384: Wand mit fenster (flur)002
+    3300386: Wand mit fenster (flur)003
+    3300388: Wand mit fenster (flur)006
+    3300390: Wand mit fenster (flur)007
+    3300392: Wohnzimmer wand006
+    3300394: Wohnzimmer wand010
+    3300396: Wohnzimmer wand011
+    3300398: Wohnzimmer wand012
+    3300400: Wohnzimmer wand014
+    3300402: Wohnzimmer wand015
     4300000: Wand mit fenster (flur)003
     4300002: Line013
     4300004: Wohnzimmer wand012
@@ -849,203 +838,200 @@ ModelImporter:
     4300010: Wohnzimmer wand006
     4300012: Wand bad hinten
     4300014: Wand mit fenster (flur)002
-    4300016: Wand mit fenster (flur)001
-    4300018: Wand mit fenster (flur)
-    4300020: Cylinder009
-    4300022: Cylinder010
-    4300024: Cylinder011
-    4300026: Cylinder012
-    4300028: Cylinder013
-    4300030: Wohnzimmer wand014
-    4300032: Wohnzimmer wand015
-    4300034: Wand mit fenster (flur)006
-    4300036: Wand mit fenster (flur)007
-    4300038: Loft008
-    4300040: Loft009
-    4300042: Clonedachbeloon
-    4300044: Box052
-    4300046: Box076
-    4300048: Box144
-    4300050: Box192
-    4300052: Box193
-    4300054: Box194
-    4300056: Box191
-    4300058: Box195
-    4300060: Box188
-    4300062: Box177
-    4300064: clonebalkendachbeloon
-    4300066: Box190
-    4300068: Box189
-    4300070: clonebalkenbeloon22223
-    4300072: balkenballon3353
-    4300074: clonebalkenbeloon22222
-    4300076: clonebalkenbeloon22224
-    4300078: clonebalkenbeloon
-    4300080: balkenbaloon32
-    4300082: balkenballon00333
-    4300084: Box053
-    4300086: Box136
-    4300088: Box052
-    4300090: balkenballon
-    4300092: Box219
-    4300094: Box096
-    4300096: Box077
-    4300098: Box078
-    4300100: Box082
-    4300102: Box135
-    4300104: Box137
-    4300106: Box058
-    4300108: Box081
-    4300110: Box079
-    4300112: Box138
-    4300114: Box139
-    4300116: Box123
-    4300118: balkenballon334
-    4300120: balkenballon3354
-    4300122: Box124
-    4300124: Box114
-    4300126: Box163
-    4300128: Box115
-    4300130: Loft005
-    4300132: Box196
-    4300134: Box117
-    4300136: Box118
-    4300138: Box197
-    4300140: Box128
-    4300142: Box129
-    4300144: Box131
-    4300146: Box130
-    4300148: Box122
-    4300150: Box199
-    4300152: Box200
-    4300154: Box201
-    4300156: Box044
-    4300158: Box045
-    4300160: Box075
-    4300162: Box169
-    4300164: Box084
-    4300166: Box039
-    4300168: Box037
-    4300170: Box038
-    4300172: Box071
-    4300174: Box073
-    4300176: Loft001
-    4300178: Box202
-    4300180: Box098
-    4300182: Box097
-    4300184: Box099
-    4300186: Box069
-    4300188: Box070
-    4300190: Box047
-    4300192: Box040
-    4300194: Box043
-    4300196: Box042
-    4300198: Box041
-    4300200: Box095
-    4300202: AI29_01_stairs_002_031
-    4300204: AI29_01_stairs_002_030
-    4300206: AI29_01_stairs_002_029
-    4300208: AI29_01_stairs_002_028
-    4300210: AI29_01_stairs_002_27
-    4300212: AI29_01_stairs_002_26
-    4300214: AI29_01_stairs_002_25
-    4300216: AI29_01_stairs_002_24
-    4300218: AI29_01_stairs_002_23
-    4300220: AI29_01_stairs_002_22
-    4300222: AI29_01_stairs_002_21
-    4300224: AI29_01_stairs_002_20
-    4300226: AI29_01_stairs_002_19
-    4300228: AI29_01_stairs_002_18
-    4300230: AI29_01_stairs_002_17
-    4300232: AI29_01_stairs_002_16
-    4300234: AI29_01_stairs_002_15
-    4300236: AI29_01_stairs_002_14
-    4300238: AI29_01_stairs_002_13
-    4300240: AI29_01_stairs_002_12
-    4300242: AI29_01_stairs_002_11
-    4300244: AI29_01_stairs_002_10
-    4300246: AI29_01_stairs_002_09
-    4300248: AI29_01_stairs_002_08
-    4300250: AI29_01_stairs_002_07
-    4300252: AI29_01_stairs_002_06
-    4300254: AI29_01_stairs_002_05
-    4300256: AI29_01_stairs_002_04
-    4300258: AI29_01_stairs_002_03
-    4300260: AI29_01_stairs_002_02
-    4300262: AI29_01_stairs_002_00
-    4300264: Box001
-    4300266: Box008
-    4300268: Box018
-    4300270: Box028
-    4300272: Box048
-    4300274: Box049
-    4300276: Box050
-    4300278: Box053
-    4300280: Box055
-    4300282: Box056
-    4300284: Box057
-    4300286: Box059
-    4300288: Box067
-    4300290: Box068
-    4300292: Box074
-    4300294: Box085
-    4300296: Box086
-    4300298: Box087
-    4300300: Box088
-    4300302: Box091
-    4300304: Box092
-    4300306: Box093
-    4300308: Box094
-    4300310: Box102
-    4300312: Box103
-    4300314: Box104
-    4300316: Box105
-    4300318: Box108
-    4300320: Box109
-    4300322: Box110
-    4300324: Box111
-    4300326: Box112
-    4300328: Box116
-    4300330: Box119
-    4300332: Box125
-    4300334: Box126
-    4300336: Box127
-    4300338: Box132
-    4300340: Box134
-    4300342: Box140
-    4300344: Box141
-    4300346: Box142
-    4300348: Box145
-    4300350: Box146
-    4300352: Box147
-    4300354: Box148
-    4300356: Box151
-    4300358: Box152
-    4300360: Box153
-    4300362: Box155
-    4300364: Box160
-    4300366: Box164
-    4300368: Box166
-    4300370: Box167
-    4300372: Box170
-    4300374: Box172
-    4300376: Box174
-    4300378: Box179
-    4300380: Box181
-    4300382: Box182
-    4300384: Box186
-    4300386: Box203
-    4300388: Box211
-    4300390: Box212
-    4300392: Box214
-    4300394: Box217
-    4300396: Box218
-    4300398: Box221
-    4300400: Box223
-    4300402: Box224
-    4300404: Box225
-    4300406: Box226
-    4300408: Box227
+    4300016: Wand mit fenster (flur)
+    4300018: Cylinder009
+    4300020: Cylinder010
+    4300022: Cylinder011
+    4300024: Cylinder012
+    4300026: Cylinder013
+    4300028: Wohnzimmer wand014
+    4300030: Wohnzimmer wand015
+    4300032: Wand mit fenster (flur)006
+    4300034: Wand mit fenster (flur)007
+    4300036: Loft008
+    4300038: Loft009
+    4300040: Clonedachbeloon
+    4300042: Box052
+    4300044: Box076
+    4300046: Box144
+    4300048: Box192
+    4300050: Box193
+    4300052: Box194
+    4300054: Box191
+    4300056: Box195
+    4300058: Box188
+    4300060: Box177
+    4300062: clonebalkendachbeloon
+    4300064: Box190
+    4300066: Box189
+    4300068: clonebalkenbeloon22223
+    4300070: balkenballon3353
+    4300072: clonebalkenbeloon22222
+    4300074: clonebalkenbeloon22224
+    4300076: clonebalkenbeloon
+    4300078: balkenbaloon32
+    4300080: balkenballon00333
+    4300082: Box053
+    4300084: Box136
+    4300086: Box052
+    4300088: balkenballon
+    4300090: Box219
+    4300092: Box096
+    4300094: Box077
+    4300096: Box078
+    4300098: Box082
+    4300100: Box135
+    4300102: Box137
+    4300104: Box058
+    4300106: Box081
+    4300108: Box079
+    4300110: Box138
+    4300112: Box139
+    4300114: Box123
+    4300116: balkenballon334
+    4300118: balkenballon3354
+    4300120: Box124
+    4300122: Box114
+    4300124: Box163
+    4300126: Box115
+    4300128: Loft005
+    4300130: Box196
+    4300132: Box117
+    4300134: Box118
+    4300136: Box197
+    4300138: Box128
+    4300140: Box129
+    4300142: Box131
+    4300144: Box130
+    4300146: Box122
+    4300148: Box199
+    4300150: Box200
+    4300152: Box201
+    4300154: Box044
+    4300156: Box045
+    4300158: Box075
+    4300160: Box169
+    4300162: Box084
+    4300164: Box039
+    4300166: Box037
+    4300168: Box038
+    4300170: Box071
+    4300172: Box073
+    4300174: Loft001
+    4300176: Box202
+    4300178: Box098
+    4300180: Box097
+    4300182: Box099
+    4300184: Box069
+    4300186: Box070
+    4300188: Box047
+    4300190: Box040
+    4300192: Box043
+    4300194: Box042
+    4300196: Box041
+    4300198: Box095
+    4300200: AI29_01_stairs_002_031
+    4300202: AI29_01_stairs_002_030
+    4300204: AI29_01_stairs_002_029
+    4300206: AI29_01_stairs_002_028
+    4300208: AI29_01_stairs_002_27
+    4300210: AI29_01_stairs_002_26
+    4300212: AI29_01_stairs_002_25
+    4300214: AI29_01_stairs_002_24
+    4300216: AI29_01_stairs_002_23
+    4300218: AI29_01_stairs_002_22
+    4300220: AI29_01_stairs_002_21
+    4300222: AI29_01_stairs_002_20
+    4300224: AI29_01_stairs_002_19
+    4300226: AI29_01_stairs_002_18
+    4300228: AI29_01_stairs_002_17
+    4300230: AI29_01_stairs_002_16
+    4300232: AI29_01_stairs_002_15
+    4300234: AI29_01_stairs_002_14
+    4300236: AI29_01_stairs_002_13
+    4300238: AI29_01_stairs_002_12
+    4300240: AI29_01_stairs_002_11
+    4300242: AI29_01_stairs_002_10
+    4300244: AI29_01_stairs_002_09
+    4300246: AI29_01_stairs_002_08
+    4300248: AI29_01_stairs_002_07
+    4300250: AI29_01_stairs_002_06
+    4300252: AI29_01_stairs_002_05
+    4300254: AI29_01_stairs_002_04
+    4300256: AI29_01_stairs_002_03
+    4300258: AI29_01_stairs_002_02
+    4300260: AI29_01_stairs_002_00
+    4300262: Box001
+    4300264: Box008
+    4300266: Box018
+    4300268: Box028
+    4300270: Box048
+    4300272: Box049
+    4300274: Box050
+    4300276: Box053
+    4300278: Box055
+    4300280: Box056
+    4300282: Box057
+    4300284: Box059
+    4300286: Box067
+    4300288: Box068
+    4300290: Box074
+    4300292: Box085
+    4300294: Box086
+    4300296: Box087
+    4300298: Box088
+    4300300: Box091
+    4300302: Box092
+    4300304: Box093
+    4300306: Box094
+    4300308: Box102
+    4300310: Box103
+    4300312: Box105
+    4300314: Box108
+    4300316: Box109
+    4300318: Box110
+    4300320: Box111
+    4300322: Box112
+    4300324: Box116
+    4300326: Box119
+    4300328: Box125
+    4300330: Box126
+    4300332: Box127
+    4300334: Box132
+    4300336: Box134
+    4300338: Box140
+    4300340: Box141
+    4300342: Box142
+    4300344: Box145
+    4300346: Box146
+    4300348: Box147
+    4300350: Box151
+    4300352: Box152
+    4300354: Box153
+    4300356: Box155
+    4300358: Box160
+    4300360: Box164
+    4300362: Box166
+    4300364: Box167
+    4300366: Box170
+    4300368: Box172
+    4300370: Box174
+    4300372: Box179
+    4300374: Box181
+    4300376: Box182
+    4300378: Box186
+    4300380: Box203
+    4300382: Box211
+    4300384: Box212
+    4300386: Box214
+    4300388: Box217
+    4300390: Box218
+    4300392: Box221
+    4300394: Box223
+    4300396: Box224
+    4300398: Box225
+    4300400: Box226
+    4300402: Box227
   externalObjects: {}
   materials:
     importMaterials: 1
