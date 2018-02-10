@@ -42,4 +42,8 @@ MonoBehaviour:
   - RequestForPickupItems
   - RequestForPickupTimes
   - TaggedPlayer
+  - NetFire
+  - NewPlayer
+  - PlayClipAtPoint
+  - SetPanoramaFromObject
   DisableAutoOpenWizard: 1
