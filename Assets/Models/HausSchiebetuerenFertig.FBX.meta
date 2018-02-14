@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 485c062ea63457b48a9bc37980593a40
+timeCreated: 1518630267
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AI29_04_doors_frame
+    100002: AI29_04_doors_frame001
+    100004: AI29_04_doors_frame002
+    100006: AI29_04_doors_handles
+    100008: AI29_04_doors_handles001
+    100010: AI29_04_doors_handles002
+    100012: AI29_04_glass
+    100014: AI29_04_glass001
+    100016: AI29_04_glass002
+    100018: Group001
+    100020: Group002
+    100022: Group003
+    100024: //RootNode
+    100026: Object001
+    100028: Object002
+    100030: Object003
+    400000: AI29_04_doors_frame
+    400002: AI29_04_doors_frame001
+    400004: AI29_04_doors_frame002
+    400006: AI29_04_doors_handles
+    400008: AI29_04_doors_handles001
+    400010: AI29_04_doors_handles002
+    400012: AI29_04_glass
+    400014: AI29_04_glass001
+    400016: AI29_04_glass002
+    400018: Group001
+    400020: Group002
+    400022: Group003
+    400024: //RootNode
+    400026: Object001
+    400028: Object002
+    400030: Object003
+    2100000: AI29_04_am_68_025_001
+    2100002: 19 - Default
+    2300000: AI29_04_doors_frame
+    2300002: AI29_04_doors_frame001
+    2300004: AI29_04_doors_frame002
+    2300006: AI29_04_doors_handles
+    2300008: AI29_04_doors_handles001
+    2300010: AI29_04_doors_handles002
+    2300012: AI29_04_glass
+    2300014: AI29_04_glass001
+    2300016: AI29_04_glass002
+    2300018: Object001
+    2300020: Object002
+    2300022: Object003
+    3300000: AI29_04_doors_frame
+    3300002: AI29_04_doors_frame001
+    3300004: AI29_04_doors_frame002
+    3300006: AI29_04_doors_handles
+    3300008: AI29_04_doors_handles001
+    3300010: AI29_04_doors_handles002
+    3300012: AI29_04_glass
+    3300014: AI29_04_glass001
+    3300016: AI29_04_glass002
+    3300018: Object001
+    3300020: Object002
+    3300022: Object003
+    4300000: AI29_04_glass
+    4300002: AI29_04_doors_handles
+    4300004: AI29_04_doors_frame
+    4300006: Object001
+    4300008: AI29_04_doors_frame001
+    4300010: AI29_04_doors_handles001
+    4300012: AI29_04_glass001
+    4300014: Object002
+    4300016: AI29_04_doors_frame002
+    4300018: AI29_04_doors_handles002
+    4300020: AI29_04_glass002
+    4300022: Object003
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
