@@ -35,7 +35,7 @@ public class PlayerManager : Photon.PunBehaviour {
     [PunRPC]
     void NewPlayer(int idx) {
         // Create a new player at the appropriate spawn spot
-        var trans = spawns[idx].transform;
+        var trans = spawns[idx % spawns.Length].transform;
         var player = PhotonNetwork.Instantiate(playerAvatar.name, trans.position, trans.rotation, 0);
         player.name = "Player " + (idx + 1);
     }

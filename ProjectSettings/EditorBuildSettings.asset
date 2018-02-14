@@ -4,7 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/_Scenes/IceyTests/VRTK Test.unity
-    guid: 20df684bb3ad37c41bc9e5bb78b1cfaf
+  m_Scenes: []

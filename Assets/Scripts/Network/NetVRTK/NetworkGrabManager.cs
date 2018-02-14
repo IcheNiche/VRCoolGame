@@ -16,6 +16,8 @@
         private VRTK_InteractableObject io;
         private NetworkReference nref;
 
+        private bool wasKinimatic = false;
+
         public int currentGrabOwner {
             get {
                 return grabOwner;
@@ -61,6 +63,19 @@
         private void InitState(int ownerId) {
             grabOwner = ownerId;
             io.isGrabbable = (grabOwner == 0);
+
+            if (ownerId == PhotonNetwork.player.ID) { return; }
+
+            if (grabOwner == 0)
+            {
+                io.isKinematic = wasKinimatic;
+            }
+            else
+            {
+                wasKinimatic = io.isKinematic;
+                io.isKinematic = true;
+            }
+            
         }
 
         //

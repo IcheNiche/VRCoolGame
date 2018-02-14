@@ -28,7 +28,6 @@ GameObject:
   - component: {fileID: 114293729372137782}
   - component: {fileID: 111952444757785510}
   - component: {fileID: 114860001258862908}
-  - component: {fileID: 114499277848877412}
   m_Layer: 0
   m_Name: ItemGun
   m_TagString: Holsterable
@@ -465,19 +464,6 @@ MonoBehaviour:
   bulletSpawn: {fileID: 4719475787863064}
   fireGunSound: {fileID: 8300000, guid: edc6dc12da6af43409913c1d4323ab14, type: 3}
   fireAnimation: {fileID: 111952444757785510}
---- !u!114 &114499277848877412
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009108833589340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
 --- !u!114 &114531619737491070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -499,7 +485,6 @@ MonoBehaviour:
   ownershipTransfer: 1
   ObservedComponents:
   - {fileID: 114860001258862908}
-  - {fileID: 114499277848877412}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
