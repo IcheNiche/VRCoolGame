@@ -113,7 +113,7 @@
 
         private void InitState(int ownerId) {
             grabOwner = ownerId;
-            interactableObject.isGrabbable = (grabOwner == 0);
+            //interactableObject.isGrabbable = (grabOwner == 0);
 
             if (ownerId == PhotonNetwork.player.ID) { return; }
 
