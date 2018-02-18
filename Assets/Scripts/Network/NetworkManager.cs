@@ -1,5 +1,8 @@
 ﻿using System;
 using UnityEngine;
+using NetBase;
+
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class NetworkManager : Photon.PunBehaviour
 {
@@ -77,4 +80,5 @@ public class NetworkManager : Photon.PunBehaviour
     {
         Debug.Log("We got disconnected form the Photon network");
     }
+
 }
