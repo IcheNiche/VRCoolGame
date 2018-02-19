@@ -693,9 +693,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 6d006e99-ab0c-4d3c-b6bf-4b3089969249
+  cloudProjectId: 41752935-5432-4f7d-b15c-1927f0d8dc6c
   projectName: VRCoolGame
-  organizationId: team-rofl
+  organizationId: lastikborun
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
