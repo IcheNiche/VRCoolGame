@@ -28,6 +28,7 @@ public sealed class AvatarCameraRigSync : MonoBehaviour {
         var transformFollow = avatarComponent.AddComponent<VRTK_TransformFollow>();
         transformFollow.gameObjectToFollow = VRTK_DeviceFinder.DeviceTransform(device).gameObject;
         transformFollow.followsScale = false;
+
     }
 
     private static void SetUpControllerHandLink(GameObject avatarComponent, VRTK_DeviceFinder.Devices device) {

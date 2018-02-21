@@ -153,7 +153,7 @@ namespace VRTK
             }
         }
 
-        protected virtual void FixedUpdate()
+        protected virtual void LateUpdate()
         {
             CheckDirectionDevice();
             CheckFalling();
