@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityStandardAssets;
 using UnityStandardAssets.CrossPlatformInput;
+using VRTK;
 
 namespace CompleteProject
 {
@@ -22,7 +23,7 @@ namespace CompleteProject
 		public Light faceLight;								// Duh
         float effectsDisplayTime = 0.2f;                // The proportion of the timeBetweenBullets that the effects will display for.
 
-
+        bool fired = false;
         void Awake ()
         {
             // Create a layer mask for the Shootable layer.
@@ -33,7 +34,24 @@ namespace CompleteProject
             gunLine = GetComponent <LineRenderer> ();
             gunAudio = GetComponent<AudioSource> ();
             gunLight = GetComponent<Light> ();
-			//faceLight = GetComponentInChildren<Light> ();
+            //faceLight = GetComponentInChildren<Light> ();
+
+            if (GetComponentInParent<VRTK_InteractableObject>() != null)
+            {
+                GetComponentInParent<VRTK_InteractableObject>().InteractableObjectUsed += new InteractableObjectEventHandler(DoFireGun);
+                GetComponentInParent<VRTK_InteractableObject>().InteractableObjectUnused += new InteractableObjectEventHandler(DontFireGun);
+            }
+
+        }
+
+        void DoFireGun(object sender, InteractableObjectEventArgs e)
+        {
+            fired = true;
+        }
+
+        void DontFireGun(object sender, InteractableObjectEventArgs e)
+        {
+            fired = false;
         }
 
 
@@ -44,10 +62,15 @@ namespace CompleteProject
 
 #if !MOBILE_INPUT
             // If the Fire1 button is being press and it's time to fire...
-			if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+            //if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+            //         {
+            //             // ... shoot the gun.
+            //             Shoot ();
+            //         }
+
+            if (fired && timer >= timeBetweenBullets && Time.timeScale != 0)
             {
-                // ... shoot the gun.
-                Shoot ();
+                Shoot();
             }
 #else
             // If there is input on the shoot direction stick and it's time to fire...
@@ -57,8 +80,8 @@ namespace CompleteProject
                 Shoot();
             }
 #endif
-            // If the timer has exceeded the proportion of timeBetweenBullets that the effects should be displayed for...
-            if(timer >= timeBetweenBullets * effectsDisplayTime)
+                // If the timer has exceeded the proportion of timeBetweenBullets that the effects should be displayed for...
+                if (timer >= timeBetweenBullets * effectsDisplayTime)
             {
                 // ... disable the effects.
                 DisableEffects ();
