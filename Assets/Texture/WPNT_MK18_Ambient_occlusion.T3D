@@ -1,0 +1,11 @@
+Begin Object Class=Texture2D Name="WPNT_MK18_Ambient_occlusion"
+   Begin Object Class=AssetImportData Name="AssetImportData"
+   End Object
+   Begin Object Name="AssetImportData"
+   End Object
+   ImportedSize=(X=4096,Y=4096)
+   Source=(Id=253A348644FEC72F319BF38D6F3AE699,SizeX=4096,SizeY=4096,NumSlices=1,NumMips=1,bPNGCompressed=True,Format=TSF_G8)
+   LightingGuid=82043A9244C7F2D9C9E033A25D86ADCB
+   AssetImportData=AssetImportData'AssetImportData'
+   CompressionSettings=TC_Grayscale
+End Object
