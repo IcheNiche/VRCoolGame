@@ -6,9 +6,11 @@ using VRTK;
 public class LeftHandMenuController : MonoBehaviour {
 
     public VRTK_ControllerEvents controllerEvents;
-    public GameObject menuCanvas;
+    public GameObject mainMenu;
 
-    public bool visible = false;
+    private GameObject currentMenu;
+
+    private bool visible = false;
 
     private void Awake()
     {
@@ -23,6 +25,12 @@ public class LeftHandMenuController : MonoBehaviour {
 
     }
 
+    void Start()
+    {
+        SetCurrentMenu(mainMenu);
+        SetMenuVisible(visible);
+    }
+
     void OnButtonTwoPressed(object sender, ControllerInteractionEventArgs e)
     {
         visible = !visible;
@@ -31,13 +39,24 @@ public class LeftHandMenuController : MonoBehaviour {
 
     void SetMenuVisible(bool visible)
     {
-        menuCanvas.SetActive(visible);
+
+        if (visible)
+        {
+            SetCurrentMenu(currentMenu);
+        }
+
+        gameObject.SetActive(visible);
     }
 
-    // Use this for initialization
-    void Start () {
-		
-	}
+    public void SetCurrentMenu(GameObject currentMenu)
+    {
+        for(int i=0; i< transform.childCount; i++)
+        {
+            transform.GetChild(i).gameObject.SetActive(false);
+        }
+        this.currentMenu = currentMenu;
+        this.currentMenu.SetActive(true);
+    }
 	
 	// Update is called once per frame
 	void Update () {
