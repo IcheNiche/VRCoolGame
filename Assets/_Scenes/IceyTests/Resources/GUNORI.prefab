@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114306724503733670}
   - component: {fileID: 114879983776556186}
   - component: {fileID: 114815335953380772}
+  - component: {fileID: 114300006324774236}
   m_Layer: 0
   m_Name: GUNORI
   m_TagString: Untagged
@@ -1516,6 +1517,7 @@ MonoBehaviour:
   timeBetweenBullets: 0.12
   range: 100
   faceLight: {fileID: 108892016023119712}
+  fired: 0
 --- !u!114 &114236184071153588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1527,6 +1529,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18055ba762aa3994f9c10208cd088bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114300006324774236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000318076532960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fb823d9e194214f86f3219f40c0a9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableObject: {fileID: 114558957870981848}
+  playerShooting: {fileID: 114183701507573218}
 --- !u!114 &114306724503733670
 MonoBehaviour:
   m_ObjectHideFlags: 1

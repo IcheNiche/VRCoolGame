@@ -67,7 +67,7 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
     {
         if (networkReference.IsPhotonView)
         {
-            SetState(networkReference.GetPhotonView().ownerId);
+            SetState(0);
         }
 
         PhotonNetwork.OnEventCall += this.OnUpdateData;
@@ -119,7 +119,28 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
             content.Add("angularVelocity", rigidBody.angularVelocity);
         }
 
-        PhotonNetwork.RaiseEvent((byte)RaiseEventCodes.UpdateObjectRoomData, content, true, null);
+        //PhotonNetwork.RaiseEvent((byte)RaiseEventCodes.UpdateObjectRoomData, content, true, null);
+
+        PhotonView.Get(this).RPC("UpdateData", PhotonTargets.AllBufferedViaServer, content);
+
+    }
+
+    [PunRPC]
+    void UpdateData(Hashtable eventContent)
+    {
+        Hashtable content = (Hashtable)eventContent;
+
+        interactableObject.isKinematic = (bool)content["grabbed"];
+        SetState((int)content["grabOwner"]);
+
+        transform.position = (Vector3)content["position"];
+        transform.rotation = (Quaternion)content["rotation"];
+
+        if (rigidBody != null)
+        {
+            rigidBody.velocity = (Vector3)content["velocity"];
+            rigidBody.angularVelocity = (Vector3)content["angularVelocity"];
+        }
     }
 
 

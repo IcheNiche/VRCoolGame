@@ -23,7 +23,7 @@ namespace CompleteProject
 		public Light faceLight;								// Duh
         float effectsDisplayTime = 0.2f;                // The proportion of the timeBetweenBullets that the effects will display for.
 
-        bool fired = false;
+        public bool fired = false;
         void Awake ()
         {
             // Create a layer mask for the Shootable layer.
@@ -36,24 +36,7 @@ namespace CompleteProject
             gunLight = GetComponent<Light> ();
             //faceLight = GetComponentInChildren<Light> ();
 
-            if (GetComponentInParent<VRTK_InteractableObject>() != null)
-            {
-                GetComponentInParent<VRTK_InteractableObject>().InteractableObjectUsed += new InteractableObjectEventHandler(DoFireGun);
-                GetComponentInParent<VRTK_InteractableObject>().InteractableObjectUnused += new InteractableObjectEventHandler(DontFireGun);
-            }
-
         }
-
-        void DoFireGun(object sender, InteractableObjectEventArgs e)
-        {
-            fired = true;
-        }
-
-        void DontFireGun(object sender, InteractableObjectEventArgs e)
-        {
-            fired = false;
-        }
-
 
         void Update ()
         {
