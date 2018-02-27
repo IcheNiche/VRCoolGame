@@ -9,6 +9,15 @@ TagManager:
   - projectile
   - TeleportIgnore
   - PanoramaSource
+  - Cubes
+  - Spheres
+  - Leg
+  - Arm
+  - Saucers
+  - Torso
+  - OtherSaucers
+  - Weapon
+  - Magazine
   layers:
   - Default
   - TransparentFX
