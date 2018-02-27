@@ -46,4 +46,6 @@ MonoBehaviour:
   - NewPlayer
   - PlayClipAtPoint
   - SetPanoramaFromObject
+  - UpdateData
+  - Shooting
   DisableAutoOpenWizard: 1
