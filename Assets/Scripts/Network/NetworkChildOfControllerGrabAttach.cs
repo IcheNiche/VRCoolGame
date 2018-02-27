@@ -7,7 +7,8 @@ using VRTK.GrabAttachMechanics;
 
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAttach {
+public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAttach
+{
 
     public PhotonView[] ownAdditionalPhotonviews;
 
@@ -16,10 +17,7 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
     private VRTK_InteractableObject interactableObject;
     private Rigidbody rigidBody;
 
-    //private VRTK_InteractableObject interactableObject;
     private NetworkReference networkReference;
-
-    private bool wasKinimatic = false;
 
     public int currentGrabOwner
     {
@@ -37,25 +35,19 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         rigidBody = GetComponent<Rigidbody>();
 
         networkReference = NetworkReference.FromObject(this.gameObject);
-        //propKey = PROP_KEY_ID + networkReference.parentHandleId + "$" + (networkReference.pathFromParent != null ? networkReference.pathFromParent : "") + "$";
 
     }
-
 
     public override bool StartGrab(GameObject grabbingObject, GameObject givenGrabbedObject, Rigidbody givenControllerAttachPoint)
     {
         if (base.StartGrab(grabbingObject, givenGrabbedObject, givenControllerAttachPoint))
         {
-            HandleGrab();
+            HandleGrab(grabbingObject, givenGrabbedObject, givenControllerAttachPoint);
             return true;
         }
         return false;
     }
 
-    /// <summary>
-    /// The StopGrab method ends the grab of the current object and cleans up the state.
-    /// </summary>
-    /// <param name="applyGrabbingObjectVelocity">If true will apply the current velocity of the grabbing object to the grabbed object on release.</param>
     public override void StopGrab(bool applyGrabbingObjectVelocity)
     {
         base.StopGrab(applyGrabbingObjectVelocity);
@@ -70,18 +62,9 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
             SetState(0);
         }
 
-        PhotonNetwork.OnEventCall += this.OnUpdateData;
     }
 
-    void OnDisable()
-    {
-
-        PhotonNetwork.OnEventCall -= this.OnUpdateData;
-    }
-
-
-
-    private void HandleGrab()
+    private void HandleGrab(GameObject grabbingObject, GameObject givenGrabbedObject, Rigidbody givenControllerAttachPoint)
     {
         if (networkReference.IsPhotonView)
         {
@@ -93,76 +76,47 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         }
         SetState(PhotonNetwork.player.ID);
 
-        UpdateDataToAllClients(true);
+        UpdateDataToAllClients(true, givenControllerAttachPoint);
     }
 
     private void HandleUngrab()
     {
         SetState(0);
 
-        UpdateDataToAllClients(false);
+        UpdateDataToAllClients(false, null);
     }
 
-    void UpdateDataToAllClients(bool grabbed)
+    void UpdateDataToAllClients(bool grabbed, Rigidbody givenControllerAttachPoint)
     {
-        Hashtable content = new Hashtable();
 
-        content.Add("grabbed", grabbed);
-        content.Add("grabOwner", grabOwner);
-
-        content.Add("position", transform.position);
-        content.Add("rotation", transform.rotation);
-
-        if (rigidBody != null)
-        {
-            content.Add("velocity", rigidBody.velocity);
-            content.Add("angularVelocity", rigidBody.angularVelocity);
-        }
-
-        //PhotonNetwork.RaiseEvent((byte)RaiseEventCodes.UpdateObjectRoomData, content, true, null);
-
-        PhotonView.Get(this).RPC("UpdateData", PhotonTargets.AllBufferedViaServer, content);
+        PhotonView.Get(this).RPC("UpdateData", PhotonTargets.OthersBuffered,
+            grabbed,
+            grabOwner,
+            transform.position,
+            transform.rotation,
+            grabbed ? Vector3.zero : rigidBody.velocity,
+            grabbed ? Vector3.zero : rigidBody.angularVelocity);
 
     }
 
     [PunRPC]
-    void UpdateData(Hashtable eventContent)
+    void UpdateData(bool grabbed, int grabOwner, Vector3 position, Quaternion rotation, Vector3 velocity, Vector3 angularVelocity)
     {
-        Hashtable content = (Hashtable)eventContent;
 
-        interactableObject.isKinematic = (bool)content["grabbed"];
-        SetState((int)content["grabOwner"]);
-
-        transform.position = (Vector3)content["position"];
-        transform.rotation = (Quaternion)content["rotation"];
+        interactableObject.isKinematic = grabbed;
+        SetState(grabOwner);
 
         if (rigidBody != null)
         {
-            rigidBody.velocity = (Vector3)content["velocity"];
-            rigidBody.angularVelocity = (Vector3)content["angularVelocity"];
-        }
-    }
-
-
-    void OnUpdateData(byte eventCode, object eventContent, int senderId)
-    {
-        if (eventCode != (byte)RaiseEventCodes.UpdateObjectRoomData) { return; }
-
-        Hashtable content = (Hashtable)eventContent;
-
-        interactableObject.isKinematic = (bool)content["grabbed"];
-        SetState((int)content["grabOwner"]);
-
-        transform.position = (Vector3)content["position"];
-        transform.rotation = (Quaternion)content["rotation"];
-
-        if (rigidBody != null)
-        {
-            rigidBody.velocity = (Vector3)content["velocity"];
-            rigidBody.angularVelocity = (Vector3)content["angularVelocity"];
+            rigidBody.velocity = velocity;
+            rigidBody.angularVelocity = angularVelocity;
         }
 
+        transform.position = position;
+        transform.rotation = rotation;
+
     }
+
 
     private void SetState(int ownerId)
     {
@@ -177,7 +131,6 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         }
         else
         {
-            wasKinimatic = interactableObject.isKinematic;
             interactableObject.isKinematic = true;
         }
 
