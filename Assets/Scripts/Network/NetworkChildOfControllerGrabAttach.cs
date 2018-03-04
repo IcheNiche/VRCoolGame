@@ -36,6 +36,15 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
 
         networkReference = NetworkReference.FromObject(this.gameObject);
 
+        interactableObject.InteractableObjectUngrabbed += objectUngrabbed;
+
+    }
+
+    public void objectUngrabbed(object sender, InteractableObjectEventArgs e)
+    {
+        SetState(0);
+
+        UpdateDataToAllClients(false, null);
     }
 
     public override bool StartGrab(GameObject grabbingObject, GameObject givenGrabbedObject, Rigidbody givenControllerAttachPoint)
@@ -48,11 +57,11 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         return false;
     }
 
-    public override void StopGrab(bool applyGrabbingObjectVelocity)
-    {
-        base.StopGrab(applyGrabbingObjectVelocity);
-        HandleUngrab();
-    }
+    //public override void StopGrab(bool applyGrabbingObjectVelocity)
+    //{
+    //    base.StopGrab(applyGrabbingObjectVelocity);
+    //    HandleUngrab();
+    //}
 
 
     void OnEnable()
@@ -79,15 +88,19 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         UpdateDataToAllClients(true, givenControllerAttachPoint);
     }
 
-    private void HandleUngrab()
-    {
-        SetState(0);
+    //private void HandleUngrab()
+    //{
+    //    SetState(0);
 
-        UpdateDataToAllClients(false, null);
-    }
+    //    UpdateDataToAllClients(false, null);
+    //}
 
     void UpdateDataToAllClients(bool grabbed, Rigidbody givenControllerAttachPoint)
     {
+
+        NetworkReference parentNetworkReference = NetworkReference.FromTransform(transform.parent);
+
+        Debug.Log("PARENT: " + parentNetworkReference);
 
         PhotonView.Get(this).RPC("UpdateData", PhotonTargets.OthersBuffered,
             grabbed,
@@ -95,12 +108,14 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
             transform.position,
             transform.rotation,
             grabbed ? Vector3.zero : rigidBody.velocity,
-            grabbed ? Vector3.zero : rigidBody.angularVelocity);
+            grabbed ? Vector3.zero : rigidBody.angularVelocity,
+            parentNetworkReference.parentHandleId,
+            parentNetworkReference.pathFromParent);
 
     }
 
     [PunRPC]
-    void UpdateData(bool grabbed, int grabOwner, Vector3 position, Quaternion rotation, Vector3 velocity, Vector3 angularVelocity)
+    void UpdateData(bool grabbed, int grabOwner, Vector3 position, Quaternion rotation, Vector3 velocity, Vector3 angularVelocity, int parentId, string parentPath)
     {
 
         interactableObject.isKinematic = grabbed;
@@ -115,6 +130,19 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         transform.position = position;
         transform.rotation = rotation;
 
+        // Parenting
+        var actualNref = NetworkReference.FromTransform(transform.parent);
+        var newNref = NetworkReference.FromIdAndPath(parentId, parentPath);
+
+        Debug.Log("Parenting: " + actualNref + "  NewRef: " + newNref);
+
+        if (actualNref != newNref)
+        {
+            //Debug.Log("Reparenting from " + actualNref + " to " + newNref);
+            GameObject newParent = newNref.FindObject();
+            //Debug.Log("New parent " + newParent);
+            transform.parent = newParent != null ? newParent.transform : null;
+        }
     }
 
 

@@ -1525,6 +1525,12 @@ Prefab:
       propertyPath: gameVersion
       value: 1.114
       objectReference: {fileID: 0}
+    - target: {fileID: 114782165028374254, guid: 8908ea4ea938ef6468a788483857759f,
+        type: 2}
+      propertyPath: playerAvatar
+      value: 
+      objectReference: {fileID: 1396155991360138, guid: cc32832fdbc5e344fb4a46c76d6402ad,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8908ea4ea938ef6468a788483857759f, type: 2}
   m_IsPrefabParent: 0
