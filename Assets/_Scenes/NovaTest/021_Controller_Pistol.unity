@@ -2435,13 +2435,13 @@ GameObject:
   - component: {fileID: 307999545}
   - component: {fileID: 307999554}
   - component: {fileID: 307999553}
+  - component: {fileID: 307999546}
   - component: {fileID: 307999552}
   - component: {fileID: 307999551}
   - component: {fileID: 307999550}
   - component: {fileID: 307999549}
   - component: {fileID: 307999548}
   - component: {fileID: 307999547}
-  - component: {fileID: 307999546}
   m_Layer: 0
   m_Name: Slide
   m_TagString: Untagged
@@ -2620,8 +2620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 1
-  rightSnapHandle: {fileID: 536075899}
-  leftSnapHandle: {fileID: 536075899}
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
@@ -9458,6 +9458,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114155602973984222, guid: 02a16d766aa03cd4fb241bc4268e10eb,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
   m_IsPrefabParent: 0
@@ -10997,7 +11002,6 @@ GameObject:
   - component: {fileID: 1322235686}
   - component: {fileID: 1322235685}
   - component: {fileID: 1322235684}
-  - component: {fileID: 1322235683}
   m_Layer: 0
   m_Name: GUNORI2
   m_TagString: Weapon
@@ -11005,19 +11009,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1322235683
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 65521305318539874, guid: ae9d2db9aa8f2774582601577ade01d6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1322235682}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.05273044, y: 0.10190368, z: 0.23052055}
-  m_Center: {x: 0.0011176467, y: -0.02719748, z: -0.014143437}
 --- !u!114 &1322235684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11077,7 +11068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3f14e769cc6584ebc9b50b80afa296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableWhenIdle: 1
+  disableWhenIdle: 0
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
   ignoredColliders: []
@@ -11089,9 +11080,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 1322235686}
   secondaryGrabActionScript: {fileID: 1322235685}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -15839,6 +15830,7 @@ GameObject:
   - component: {fileID: 1541051974}
   - component: {fileID: 1541051976}
   - component: {fileID: 1541051975}
+  - component: {fileID: 1541051977}
   m_Layer: 0
   m_Name: WPN_AP85
   m_TagString: Untagged
@@ -15903,6 +15895,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541051973}
   m_Mesh: {fileID: 4300000, guid: c0fec3b1b41de4d4a8193714645b3113, type: 3}
+--- !u!65 &1541051977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541051973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.035556067, y: 0.066399716, z: 0.08751154}
+  m_Center: {x: -0.0014248844, y: 0.02624979, z: -0.04296862}
 --- !u!1 &1616526131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17862,7 +17866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1911979852
 Transform:
   m_ObjectHideFlags: 0
@@ -17886,7 +17890,7 @@ FixedJoint:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911979851}
-  m_ConnectedBody: {fileID: 1322235688}
+  m_ConnectedBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -17900,7 +17904,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911979851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 215832f65b7539949b238da31a4c90b5, type: 3}
   m_Name: 

@@ -2366,7 +2366,7 @@ Transform:
   - {fileID: 686392164}
   - {fileID: 653501384}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &240852118
 MonoBehaviour:
@@ -3215,7 +3215,7 @@ Transform:
   - {fileID: 1909421573}
   - {fileID: 2087651250}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466131927
 GameObject:
@@ -3615,13 +3615,13 @@ GameObject:
   - component: {fileID: 515909229}
   - component: {fileID: 515909238}
   - component: {fileID: 515909237}
+  - component: {fileID: 515909230}
   - component: {fileID: 515909236}
   - component: {fileID: 515909235}
   - component: {fileID: 515909234}
   - component: {fileID: 515909233}
   - component: {fileID: 515909232}
   - component: {fileID: 515909231}
-  - component: {fileID: 515909230}
   m_Layer: 0
   m_Name: Slide
   m_TagString: Untagged
@@ -3794,8 +3794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 1
-  rightSnapHandle: {fileID: 1461186964}
-  leftSnapHandle: {fileID: 1461186964}
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
   onGrabCollisionDelay: 0
@@ -4481,7 +4481,7 @@ Transform:
   - {fileID: 799453137}
   - {fileID: 1985595250}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589151779
 GameObject:
@@ -6013,7 +6013,7 @@ Transform:
   - {fileID: 1261265624}
   - {fileID: 1117357822}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &730905520
 MonoBehaviour:
@@ -6026,7 +6026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3f14e769cc6584ebc9b50b80afa296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disableWhenIdle: 1
+  disableWhenIdle: 0
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   allowedTouchControllers: 0
   ignoredColliders: []
@@ -6038,9 +6038,9 @@ MonoBehaviour:
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 730905517}
   secondaryGrabActionScript: {fileID: 730905516}
-  isUsable: 0
+  isUsable: 1
   holdButtonToUse: 1
-  useOnlyIfGrabbed: 0
+  useOnlyIfGrabbed: 1
   pointerActivatesUseAction: 0
   useOverrideButton: 0
   allowedUseControllers: 0
@@ -6194,6 +6194,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 771014052}
   m_Mesh: {fileID: 4300000, guid: 2f67020df3f94914b97e2b16f6b2eea5, type: 3}
+--- !u!1001 &775850731
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.14125979
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.3005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.8912045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070770716524046, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02a16d766aa03cd4fb241bc4268e10eb, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &799453136
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,7 +7448,7 @@ Transform:
   m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189733189
 GameObject:
@@ -7508,7 +7550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219236877
 GameObject:
@@ -17541,7 +17583,7 @@ Transform:
   m_Children:
   - {fileID: 1886705154}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1742128127
 GameObject:
@@ -18738,7 +18780,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1909421572
 GameObject:
