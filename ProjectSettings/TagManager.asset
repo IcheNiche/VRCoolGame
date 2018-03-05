@@ -18,6 +18,9 @@ TagManager:
   - OtherSaucers
   - Weapon
   - Magazine
+  - Slider
+  - AP85mag
+  - MK18mag
   layers:
   - Default
   - TransparentFX
