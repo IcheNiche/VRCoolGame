@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 65948539930684008}
   m_Layer: 12
   m_Name: AP85_Magazine
-  m_TagString: Magazine
+  m_TagString: AP85mag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453259552012496}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.23750228, y: 1.371, z: -0.706}
+  m_LocalPosition: {x: -1.0291779, y: 1.376, z: -0.67148507}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4551535376517730}
