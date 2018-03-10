@@ -258,6 +258,11 @@
             if (pvl != null) {
                 return pvl;
             }
+            PhotonViewLink pvl2 = obj.parent.GetComponentInParent<PhotonViewLink>();
+            if (pvl2 != null)
+            {
+                return pvl2;
+            }
             return null;
         }
 
