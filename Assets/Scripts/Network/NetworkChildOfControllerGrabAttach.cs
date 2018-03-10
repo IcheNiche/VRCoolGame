@@ -118,9 +118,23 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
     void UpdateData(bool grabbed, int grabOwner, Vector3 position, Quaternion rotation, Vector3 velocity, Vector3 angularVelocity, int parentId, string parentPath)
     {
 
+        // Parenting
+        var actualNref = NetworkReference.FromTransform(transform.parent);
+        var newNref = NetworkReference.FromIdAndPath(parentId, parentPath);
+
+        Debug.Log("Parenting: " + actualNref + "  NewRef: " + newNref + " Grabbed: " + grabbed);
+
+        if (actualNref != newNref)
+        {
+            //Debug.Log("Reparenting from " + actualNref + " to " + newNref);
+            GameObject newParent = newNref.FindObject();
+            //Debug.Log("New parent " + newParent);
+            transform.parent = newParent != null ? newParent.transform : null;
+        }
+
         interactableObject.isKinematic = grabbed;
         SetState(grabOwner);
-
+        
         if (rigidBody != null)
         {
             rigidBody.velocity = velocity;
@@ -130,19 +144,7 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         transform.position = position;
         transform.rotation = rotation;
 
-        // Parenting
-        var actualNref = NetworkReference.FromTransform(transform.parent);
-        var newNref = NetworkReference.FromIdAndPath(parentId, parentPath);
-
-        Debug.Log("Parenting: " + actualNref + "  NewRef: " + newNref);
-
-        if (actualNref != newNref)
-        {
-            //Debug.Log("Reparenting from " + actualNref + " to " + newNref);
-            GameObject newParent = newNref.FindObject();
-            //Debug.Log("New parent " + newParent);
-            transform.parent = newParent != null ? newParent.transform : null;
-        }
+        
     }
 
 

@@ -6,13 +6,35 @@ public sealed class AvatarCameraRigSync : MonoBehaviour {
     public GameObject LeftHand;
     public GameObject RightHand;
 
+    private VRTK_SDKManager sdkManager;
+    
     private void OnEnable() {
+
+        sdkManager = VRTK_SDKManager.instance;
+        sdkManager.LoadedSetupChanged += OnLoadedSetupChanged;
+
+        Setup();
+    }
+
+    private void OnDisable()
+    {
+        sdkManager.LoadedSetupChanged -= OnLoadedSetupChanged;
+    }
+
+    private void OnLoadedSetupChanged(VRTK_SDKManager sender, VRTK_SDKManager.LoadedSetupChangeEventArgs e)
+    {
+        Setup();
+    }
+
+    private void Setup()
+    {
         SetUpTransformFollow(AvatarHead, VRTK_DeviceFinder.Devices.Headset);
         SetUpTransformFollow(LeftHand, VRTK_DeviceFinder.Devices.LeftController);
         SetUpTransformFollow(RightHand, VRTK_DeviceFinder.Devices.RightController);
         SetUpControllerHandLink(LeftHand, VRTK_DeviceFinder.Devices.LeftController);
         SetUpControllerHandLink(RightHand, VRTK_DeviceFinder.Devices.RightController);
     }
+
 
     private static void SetUpTransformFollow(GameObject avatarComponent, VRTK_DeviceFinder.Devices device) {
         var photonView = avatarComponent.GetComponent<PhotonView>();

@@ -128,11 +128,11 @@
             if (controllerEvents)
             {
                 var pressure = (maxTriggerRotation * controllerEvents.GetTriggerAxis()) - minTriggerRotation;
-                trigger.transform.localEulerAngles = new Vector3(0f, pressure, 0f);
+                trigger.transform.localEulerAngles = new Vector3(pressure, 0f, 0f);
             }
             else
             {
-                trigger.transform.localEulerAngles = new Vector3(0f, minTriggerRotation, 0f);
+                trigger.transform.localEulerAngles = new Vector3(minTriggerRotation, 0f, 0f);
             }
         }
 
