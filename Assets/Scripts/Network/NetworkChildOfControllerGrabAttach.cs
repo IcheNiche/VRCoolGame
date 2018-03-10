@@ -42,7 +42,7 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
 
     public void objectUngrabbed(object sender, InteractableObjectEventArgs e)
     {
-        SetState(0);
+        grabOwner = 0;
 
         UpdateDataToAllClients(false, null);
     }
@@ -56,19 +56,12 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         }
         return false;
     }
-
-    //public override void StopGrab(bool applyGrabbingObjectVelocity)
-    //{
-    //    base.StopGrab(applyGrabbingObjectVelocity);
-    //    HandleUngrab();
-    //}
-
-
+    
     void OnEnable()
     {
         if (networkReference.IsPhotonView)
         {
-            SetState(0);
+            grabOwner = 0;
         }
 
     }
@@ -83,18 +76,12 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         {
             pv.TransferOwnership(PhotonNetwork.player);
         }
-        SetState(PhotonNetwork.player.ID);
+
+        grabOwner = PhotonNetwork.player.ID;
 
         UpdateDataToAllClients(true, givenControllerAttachPoint);
     }
-
-    //private void HandleUngrab()
-    //{
-    //    SetState(0);
-
-    //    UpdateDataToAllClients(false, null);
-    //}
-
+    
     void UpdateDataToAllClients(bool grabbed, Rigidbody givenControllerAttachPoint)
     {
 
@@ -133,7 +120,7 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         }
 
         interactableObject.isKinematic = grabbed;
-        SetState(grabOwner);
+        SetRemoteState(grabOwner);
         
         if (rigidBody != null)
         {
@@ -148,12 +135,15 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
     }
 
 
-    private void SetState(int ownerId)
+    private void SetRemoteState(int ownerId)
     {
         grabOwner = ownerId;
         //interactableObject.isGrabbable = (grabOwner == 0);
-
-        if (ownerId == PhotonNetwork.player.ID) { return; }
+        
+        if (grabbedObject != null)
+        {
+            ForceReleaseGrab();
+        }
 
         if (grabOwner == 0)
         {
