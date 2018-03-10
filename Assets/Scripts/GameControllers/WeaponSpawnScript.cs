@@ -7,14 +7,8 @@ public class WeaponSpawnScript : Photon.PunBehaviour
 
     public Transform spawnGrab;
 
-    public GameObject mk18;
-
-	public void SpawnMK18()
+    public void SpawnWeapon(string weaponPrefabName)
     {
-
-        var weapon = PhotonNetwork.Instantiate(mk18.name, spawnGrab.position, spawnGrab.rotation, 0);
-
-
+        var weapon = PhotonNetwork.Instantiate(weaponPrefabName, spawnGrab.position, spawnGrab.rotation, 0);
     }
-
 }
