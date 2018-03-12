@@ -61,10 +61,11 @@ LightmapSettings:
     m_TextureHeight: 1024
     m_AO: 1
     m_AOMaxDistance: 1
-    m_CompAOExponent: 1
-    m_CompAOExponentDirect: 0
+    m_CompAOExponent: 2
+    m_CompAOExponentDirect: 0.95
     m_Padding: 2
-    m_LightmapParameters: {fileID: 0}
+    m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000,
+      type: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
     m_FinalGather: 1
@@ -89,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112002392, guid: e6cc1373b72cd074aaaaccf00d0164d2,
+  m_LightingDataAsset: {fileID: 112002380, guid: e6cc1373b72cd074aaaaccf00d0164d2,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -37584,7 +37585,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -46137,12 +46138,12 @@ Prefab:
     - target: {fileID: 224576987204835884, guid: 957133757ae3e6d488b01833b8a31afa,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 861
+      value: 579
       objectReference: {fileID: 0}
     - target: {fileID: 224576987204835884, guid: 957133757ae3e6d488b01833b8a31afa,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 224576987204835884, guid: 957133757ae3e6d488b01833b8a31afa,
         type: 2}
@@ -46152,7 +46153,7 @@ Prefab:
     - target: {fileID: 224576987204835884, guid: 957133757ae3e6d488b01833b8a31afa,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 224831194114565400, guid: 957133757ae3e6d488b01833b8a31afa,
         type: 2}
@@ -80437,7 +80438,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5597db01725c1e843ad2759e52a64a81, type: 2}
+  - {fileID: 2100000, guid: ab6822350e964894a8632ef6862891ca, type: 2}
   - {fileID: 2100000, guid: be6ff8532e4ec7647ba4d5838fb880df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
