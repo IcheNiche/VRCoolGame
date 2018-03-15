@@ -57,13 +57,6 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
         return false;
     }
 
-    //public override void StopGrab(bool applyGrabbingObjectVelocity)
-    //{
-    //    base.StopGrab(applyGrabbingObjectVelocity);
-    //    HandleUngrab();
-    //}
-
-
     void OnEnable()
     {
         if (networkReference.IsPhotonView)
@@ -87,13 +80,6 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
 
         UpdateDataToAllClients(true, givenControllerAttachPoint);
     }
-
-    //private void HandleUngrab()
-    //{
-    //    SetState(0);
-
-    //    UpdateDataToAllClients(false, null);
-    //}
 
     void UpdateDataToAllClients(bool grabbed, Rigidbody givenControllerAttachPoint)
     {
@@ -151,7 +137,7 @@ public class NetworkChildOfControllerGrabAttach : VRTK_ChildOfControllerGrabAtta
     private void SetState(int ownerId)
     {
         grabOwner = ownerId;
-        //interactableObject.isGrabbable = (grabOwner == 0);
+        interactableObject.isGrabbable = (grabOwner == 0);
 
         if (ownerId == PhotonNetwork.player.ID) { return; }
 
